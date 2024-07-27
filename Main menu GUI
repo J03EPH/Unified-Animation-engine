@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu GUI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu">
+        <h1>Menu</h1>
+        <button id="saveButton">Save</button>
+        <button id="loadButton">Load</button>
+        <textarea id="dataInput" placeholder="Enter data here..."></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
