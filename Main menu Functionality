@@ -1,0 +1,27 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const saveButton = document.getElementById('saveButton');
+    const loadButton = document.getElementById('loadButton');
+    const dataInput = document.getElementById('dataInput');
+
+    // Save button event handler
+    saveButton.addEventListener('click', () => {
+        const data = dataInput.value;
+        if (data) {
+            localStorage.setItem('savedData', data);
+            alert('Data saved successfully!');
+        } else {
+            alert('No data to save!');
+        }
+    });
+
+    // Load button event handler
+    loadButton.addEventListener('click', () => {
+        const savedData = localStorage.getItem('savedData');
+        if (savedData) {
+            dataInput.value = savedData;
+            alert('Data loaded successfully!');
+        } else {
+            alert('No data found!');
+        }
+    });
+});
